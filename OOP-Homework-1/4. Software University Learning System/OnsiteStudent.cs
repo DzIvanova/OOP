@@ -8,5 +8,13 @@ namespace _4.Software_University_Learning_System
 {
     class OnsiteStudent : CurrentStudent
     {
+        public OnsiteStudent(string firstName, string lastName, int age, int studentNumber, 
+            int averageGrade, string currentCorce, int numberOfVisits) 
+            : base(firstName, lastName, age, studentNumber, averageGrade, currentCorce)
+        {
+            this.NumberOfVisits = numberOfVisits;
+        }
+
+        public int NumberOfVisits { get; set; }
     }
 }

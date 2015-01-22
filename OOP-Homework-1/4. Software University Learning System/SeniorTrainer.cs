@@ -8,5 +8,14 @@ namespace _4.Software_University_Learning_System
 {
     class SeniorTrainer : ITrainer
     {
+        public SeniorTrainer(string firstName, string lastName, int age) : base(firstName, lastName, age)
+        {
+        }
+
+        public void DeleteCourse(string courseName)
+        {
+            this.courseName = courseName;
+            Console.WriteLine("The course {0}" + courseName + "has been deleted.");
+        }
     }
 }
