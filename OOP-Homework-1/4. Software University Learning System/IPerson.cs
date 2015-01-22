@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _4.Software_University_Learning_System
 {
-    class IPerson
+    public class IPerson
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }

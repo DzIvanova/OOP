@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace _4.Software_University_Learning_System
 {
-    class IStudent : IPerson
+    public class IStudent : IPerson
     {
         public int StudentNumber { get; set; }
-        public int AverageGrade { get; set; }
+        public float AverageGrade { get; set; }
 
-        public IStudent(string firstName, string lastName, int age, int studentNumber, int averageGrade) 
+        public IStudent(string firstName, string lastName, int age, int studentNumber, float averageGrade) 
             : base(firstName, lastName, age)
         {
             this.StudentNumber = studentNumber;

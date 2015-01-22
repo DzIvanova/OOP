@@ -8,5 +8,9 @@ namespace _4.Software_University_Learning_System
 {
     class JuniorTrainer : ITrainer
     {
+        public JuniorTrainer(string firstName, string lastName, int age) 
+            : base(firstName, lastName, age)
+        {
+        }
     }
 }

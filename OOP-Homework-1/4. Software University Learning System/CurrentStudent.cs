@@ -8,12 +8,12 @@ namespace _4.Software_University_Learning_System
     public class CurrentStudent : IStudent
     {
         public CurrentStudent(string firstName, string lastName, int age, 
-            int studentNumber, int averageGrade, string currentCorce) 
+            int studentNumber, float averageGrade, string currentCource) 
             : base(firstName, lastName, age, studentNumber, averageGrade)
         {
-            this.CurrentCorce = currentCorce;
+            this.CurrentCource = currentCource;
         }
 
-        public string CurrentCorce { get; set; }
+        public string CurrentCource { get; set; }
     }
 }
